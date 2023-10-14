@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="animate.gif" />
+    <None Remove="animate2.gif" />
+    <None Remove="icon.png" />
+    <None Remove="logo.png" />
+    <None Remove="View\add.png" />
+    <None Remove="View\author.jpg" />
+    <None Remove="View\dot.png" />
+    <None Remove="View\error.png" />
+    <None Remove="View\Group 17.png" />
+    <None Remove="View\Group 18.png" />
+    <None Remove="View\heart-white 2.png" />
+    <None Remove="View\heart.png" />
+    <None Remove="View\home.png" />
+    <None Remove="View\image 2.png" />
+    <None Remove="View\image.png" />
+    <None Remove="View\Library.png" />
+    <None Remove="View\logo.png" />
+    <None Remove="View\pause.png" />
+    <None Remove="View\play.png" />
+    <None Remove="View\Polygon.png" />
+    <None Remove="View\redHeart.png" />
+    <None Remove="View\search.png" />
+    <None Remove="View\song.png" />
+    <None Remove="View\songs..png" />
+    <None Remove="View\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Npgsql" Version="7.0.4" />
+    <PackageReference Include="OxyPlot.Core" Version="2.1.2" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.2" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="animate2.gif" />
+    <Resource Include="icon.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="View\add.png" />
+    <Resource Include="View\author.jpg" />
+    <Resource Include="View\dot.png" />
+    <Resource Include="View\error.png" />
+    <Resource Include="View\Group 17.png" />
+    <Resource Include="View\Group 18.png" />
+    <Resource Include="View\heart-white 2.png" />
+    <Resource Include="View\heart.png" />
+    <Resource Include="View\home.png" />
+    <Resource Include="View\image 2.png" />
+    <Resource Include="View\image.png" />
+    <Resource Include="View\Library.png" />
+    <Resource Include="View\logo.png" />
+    <Resource Include="View\pause.png" />
+    <Resource Include="View\play.png" />
+    <Resource Include="View\Polygon.png" />
+    <Resource Include="View\redHeart.png" />
+    <Resource Include="View\search.png" />
+    <Resource Include="View\song.png" />
+    <Resource Include="View\songs..png" />
+    <Resource Include="View\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icons\animate.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="icons\animate2.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

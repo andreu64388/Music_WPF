@@ -1,0 +1,96 @@
+﻿<Page x:Class="Music.View.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Music.View"
+      mc:Ignorable="d" 
+          Loaded="Page_Loaded"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AboutPage">
+    <Page.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#005F99"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid Margin="30,0,30,0" >
+        <StackPanel x:Name="Up" VerticalAlignment="Center" HorizontalAlignment="Left" >
+            <TextBlock Foreground="White" Text="MusApp" FontSize="36" FontWeight="Bold" Margin="0 0 0 20"/>
+
+            <TextBlock FontSize="18"  Foreground="White" 
+                       Text="MusApp is a platform designed to bring music enthusiasts together. Whether you're an artist looking to share your music or a listener searching for new tracks, MussApp has you covered. Explore a vast collection of music, create playlists, and connect with fellow music lovers. This page is created to provide information about the MusApp platform."
+           TextWrapping="Wrap" Margin="0 0 0 20"/>
+
+
+
+            <Expander x:Name="Expander1" Foreground="White" Header="Question 1: How to use MussApp?" FontSize="18" FontWeight="Bold" Margin="10">
+                <TextBlock 
+                    Text="To use MusApp, simply download the app from your app store, create an account, and start exploring and listening to music. You can search for tracks, create playlists, and interact with other users." TextWrapping="Wrap" Margin="10"/>
+            </Expander>
+
+
+            <Expander x:Name="Expander2" Foreground="White" Header="Question 2: How to register?" FontSize="18" FontWeight="Bold" Margin="10">
+                <TextBlock Text="To register on MusApp, open the app, and click on the 'Sign Up' button. You will need to provide your email address, create a password, and fill in some basic information. Once you've completed the registration form, click 'Sign Up,' and your account will be created." TextWrapping="Wrap" Margin="10"/>
+            </Expander>
+
+            <Expander x:Name="Expander3" Foreground="White" Header="Question 3: How to find music?" FontSize="18" FontWeight="Bold" Margin="10">
+                <TextBlock Text="Finding music on MusApp is easy. You can use the search bar to look for specific tracks, artists, or genres. Additionally, you can explore the 'Browse' section to discover new music and playlists curated by our team." TextWrapping="Wrap" Margin="10"/>
+            </Expander>
+
+            <Expander x:Name="Expander4" Foreground="White" Header="Question 4: How to create a playlist?" FontSize="18" FontWeight="Bold" Margin="10">
+                <TextBlock Text="Creating a playlist on MusApp is simple. Find a track you want to add to your playlist, click on the 'Add to Playlist' button, and select 'Create New Playlist.' Give your playlist a name, add a description if you like, and click 'Create.' You can add more tracks to your playlist at any time." TextWrapping="Wrap" Margin="10"/>
+            </Expander>
+
+            <Expander x:Name="Expander5" Foreground="White" Header="Question 5: How to rate and comment on tracks?" FontSize="18" FontWeight="Bold" Margin="10">
+                <TextBlock Text="You can rate and comment on tracks by opening a track's details page. There, you'll see options to give it a rating and leave a comment. Your feedback helps other users discover great music and allows artists to receive valuable feedback." TextWrapping="Wrap" Margin="10"/>
+            </Expander>
+
+            <StackPanel Margin="0,50,0,0" x:Name="Down">
+                <TextBlock Foreground="White" Text="About author" FontSize="36" FontWeight="Bold" Margin="0 0 0 20"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Width="200" Source="/View/author.jpg" Grid.Column="0"/>
+
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Foreground="White" FontSize="18" Text="MusApp is created by Andrey Korenchuk with the aim of a course project. Andrey's vision is to make music accessible to everyone and provide a platform for both music enthusiasts and artists to connect."
+                TextWrapping="Wrap" Margin="10"/>
+                        <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
+                            <Button Cursor="Hand" Width="100" Height="30" Content="Telegram" Style="{StaticResource ButtonStyle}" Click="TelegramButton_Click"/>
+                            <Button Background="Blue" Cursor="Hand" Width="100" Height="30" Content="LinkedIn" Style="{StaticResource ButtonStyle}" Click="LinkedInButton_Click"/>
+                            <Button Background="Gray" Cursor="Hand" Width="100" Height="30" Content="GitHub" Style="{StaticResource ButtonStyle}" Click="GitHubButton_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Page>

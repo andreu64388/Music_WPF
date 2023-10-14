@@ -1,0 +1,141 @@
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.exe
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.deps.json
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.runtimeconfig.json
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.dll
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.pdb
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.csproj.AssemblyReference.cache
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\App.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music_MarkupCompile.cache
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music_MarkupCompile.lref
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\MainWindow.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.g.resources
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.GeneratedMSBuildEditorConfig.editorconfig
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.AssemblyInfoInputs.cache
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.AssemblyInfo.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.csproj.CoreCompileInputs.cache
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.dll
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\refint\Music.dll
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.pdb
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.genruntimeconfig.cache
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\ref\Music.dll
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Login.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Login.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\HomePage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\HomePage.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddPage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Library.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\SearchPage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddPage.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Library.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\SearchPage.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\ProfilePage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\SettingPage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\ProfilePage.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\SettingPage.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Main.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Main.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddWindow.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddWindow.baml
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\Npgsql.dll
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.csproj.CopyComplete
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Message.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Message.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\CategoryPage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\CategoryPage.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\UpdateTrack.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\UpdateTrack.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\UpdateProfile.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\UpdateProfile.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminHomePage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminMain.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminHomePage.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminMain.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminUsersPage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminUsersPage.baml
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminTracksPage.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminTracksPage.baml
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\OxyPlot.dll
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\OxyPlot.Wpf.dll
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\OxyPlot.Wpf.Shared.dll
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\LiveCharts.dll
+E:\WPF_COURSE\Music\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddUser.g.cs
+E:\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddUser.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.exe
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.deps.json
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.runtimeconfig.json
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\Music.pdb
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\LiveCharts.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\Npgsql.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\OxyPlot.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\OxyPlot.Wpf.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\OxyPlot.Wpf.Shared.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.csproj.AssemblyReference.cache
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminHomePage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddPage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddUser.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddWindow.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminHomePage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminMain.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminTracksPage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminUsersPage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\CategoryPage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\HomePage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Library.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Login.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Main.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Message.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\ProfilePage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\SearchPage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\App.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music_MarkupCompile.cache
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music_MarkupCompile.lref
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\MainWindow.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddPage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddUser.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddWindow.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminMain.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminTracksPage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AdminUsersPage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\CategoryPage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\HomePage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Library.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Login.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Main.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\Message.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\ProfilePage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\SearchPage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.g.resources
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.GeneratedMSBuildEditorConfig.editorconfig
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.AssemblyInfoInputs.cache
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.AssemblyInfo.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.csproj.CoreCompileInputs.cache
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.csproj.CopyComplete
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\refint\Music.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.pdb
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Music.genruntimeconfig.cache
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\ref\Music.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddPageTrack.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AddPageTrack.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\EditPageTrack.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\EditPageTrack.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\EditPageUser.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\EditPageUser.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Loading.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\Loading.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\WpfAnimatedGif.dll
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\icons\animate.gif
+E:\Sites\Новая папка\WPF_COURSE\Music\bin\Debug\net7.0-windows\icons\animate2.gif
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\ProfileAboutPage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\ProfileAboutPage.baml
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AboutPage.g.cs
+E:\Sites\Новая папка\WPF_COURSE\Music\obj\Debug\net7.0-windows\View\AboutPage.baml

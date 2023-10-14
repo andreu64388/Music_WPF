@@ -1,0 +1,822 @@
+﻿<Window
+    x:Class="Music.View.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Home"
+    MinWidth="900"
+    MinHeight="600"
+AllowsTransparency="True"
+    Background="#181818"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Maximized"
+    WindowStyle="None"
+    Icon="/icon.png"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+
+        <Style x:Key="PopupButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="0,5" />
+            <Setter Property="Background" Value="Gray" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Padding" Value="10" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightGray" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+
+            <!--  Navbar  -->
+            <Grid Grid.Row="0" Background="Black">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Image
+                     Grid.Column="0"
+                    Margin="100,10,10,10"
+                    VerticalAlignment="Center"
+                    Width="100"
+                    Height="70"
+                    Source="/View/logo.png"
+                    ></Image>
+                <StackPanel
+                    Grid.Column="3"
+                    Margin="10,10,10,10"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal">
+                    <Button
+                        Width="40"
+                        Height="40"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Click="Button_Click_1"
+                        Content="_"
+                        Cursor="Hand"
+                        Foreground="White" />
+                    <Button
+                        Width="40"
+                        Height="40"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Click="Button_Click"
+                        Content="&#xE740;"
+                        Cursor="Hand"
+                        Foreground="White" />
+                    <Button
+                        Width="40"
+                        Height="40"
+                        Margin="0,0,10,0"
+                        Background="Transparent"
+                        BorderThickness="0"
+                        Click="Close"
+                        Content="X"
+                        Cursor="Hand"
+                        Foreground="White" />
+                </StackPanel>
+            </Grid>
+
+            <!--  Content  -->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!--  Menu  -->
+                <Grid
+                    Grid.Column="0"
+                    Width="280"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Stretch"
+                    Background="Black">
+
+                    <Grid
+                        Grid.Column="0"
+                        Width="280"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Stretch"
+                        Background="Black">
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <StackPanel Margin="0,10" Orientation="Horizontal">
+                                <StackPanel.Resources>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Button">
+                                                    <ContentPresenter />
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </StackPanel.Resources>
+                                <Button
+                                    Background="Transparent"
+                                    BorderBrush="Transparent"
+                                    Click="HomeButton_Click "
+                                    Cursor="Hand">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image
+                                            Width="30"
+                                            Height="30"
+                                            Margin="0,0,20,0"
+                                            VerticalAlignment="Center"
+                                            Source="/View/home.png" />
+                                        <TextBlock
+                                            VerticalAlignment="Center"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            Text="Home" />
+                                    </StackPanel>
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <ContentPresenter />
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="Transparent" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Margin="0,10" Orientation="Horizontal">
+                                <Button
+                                    Background="Transparent"
+                                    BorderBrush="Transparent"
+                                    Click="SearchButton_Click"
+                                    Cursor="Hand">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image
+                                            Width="30"
+                                            Height="30"
+                                            Margin="0,0,20,0"
+                                            VerticalAlignment="Center"
+                                            Source="/View/search.png" />
+                                        <TextBlock
+                                            VerticalAlignment="Center"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            Text="Search" />
+                                    </StackPanel>
+
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <ContentPresenter />
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="Transparent" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </StackPanel>
+
+                            <StackPanel Margin="0,10" Orientation="Horizontal">
+                                <Button
+                                    Background="Transparent"
+                                    BorderBrush="Transparent"
+                                    Click="Library_Click"
+                                    Cursor="Hand">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image
+                                            Width="30"
+                                            Height="30"
+                                            Margin="0,0,20,0"
+                                            VerticalAlignment="Center"
+                                            Source="/View/Library.png" />
+                                        <TextBlock
+                                            VerticalAlignment="Center"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            Text="Library" />
+                                    </StackPanel>
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <ContentPresenter />
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="Transparent" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel Margin="0,10" Orientation="Horizontal">
+                                <Button
+                                    Background="Transparent"
+                                    BorderBrush="Transparent"
+                                    Click="AddButton_Click"
+                                    Cursor="Hand">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image
+                                            Width="30"
+                                            Height="30"
+                                            Margin="0,0,20,0"
+                                            VerticalAlignment="Center"
+                                            Source="/View/add.png" />
+                                        <TextBlock
+                                            VerticalAlignment="Center"
+                                            FontSize="18"
+                                            Foreground="White"
+                                            Text="Add track" />
+                                    </StackPanel>
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <ContentPresenter />
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="Transparent" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    <Grid
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Border
+                            Width="50"
+                            Height="50"
+                            Margin="0,0,-10,0"
+                            Panel.ZIndex="1"
+                            Background="Gray"
+                            CornerRadius="20">
+                            <Image
+                                Width="50"
+                                Height="30"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Source="{Binding User.Image}" />
+                        </Border>
+                        <StackPanel Grid.Column="1">
+                            <Button
+                                Cursor="Hand"
+                                Margin="0,10,0,15"
+                                HorizontalAlignment="Left"
+                                Background="#FF8A8A8A"
+                                BorderBrush="Transparent"
+                                Click="MenuButton_Click">
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <Canvas Width="150" Height="30" ClipToBounds="True">
+                                        <TextBlock
+            x:Name="marqueeTextBlock"
+            Margin="15,0,20,0"
+            FontSize="18"
+            Foreground="White"
+                                              TextWrapping="Wrap"
+            ToolTip="{Binding User.Name}"
+            Text="{Binding User.Name}" />
+                                    </Canvas>
+                                    <Image
+                                        Width="20"
+                                        Height="20"
+                                        Margin="0,0,5,0"
+                                        Source="/View/Polygon.png" />
+                                </StackPanel>
+                            </Button>
+                            <Popup
+                                x:Name="MenuPopup"
+                                IsOpen="False"
+                                Placement="Top"
+                                PlacementTarget="{Binding ElementName=MenuButton}"
+                                StaysOpen="False">
+                                <Border Background="LightGray" CornerRadius="5">
+                                    <Grid Width="170" Margin="0,0,0,-10">
+                                        <StackPanel Margin="5">
+                                            <Button
+                                                Margin="0,5"
+                                                Click="About_Click"
+                                                Content="About"
+                                                Cursor="Hand"
+                                                Foreground="White"
+                                                Style="{StaticResource PopupButtonStyle}" />
+                                            <Button
+                                                Margin="0,5"
+                                                Click="Profile_Click"
+                                                Content="Profile"
+                                                Cursor="Hand"
+                                                Foreground="White"
+                                                Style="{StaticResource PopupButtonStyle}" />
+                                            <Button
+                                                Margin="0,5,0,10"
+                                                Background="Red"
+                                                Click="Exit"
+                                                Content="Exit"
+                                                Cursor="Hand"
+                                                Foreground="White"
+                                                Style="{StaticResource PopupButtonStyle}" />
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </Popup>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+                <ScrollViewer
+                    Grid.Column="1"
+                    Height="Auto"
+                    Margin="1,0,5,0"
+                    VerticalScrollBarVisibility="Auto">
+                    <ScrollViewer.Resources>
+                        <Style TargetType="ScrollViewer">
+                            <Setter Property="BorderBrush" Value="Transparent" />
+                            <Setter Property="BorderThickness" Value="1" />
+                            <Setter Property="Background" Value="Transparent" />
+                        </Style>
+                        <Style TargetType="ScrollBar">
+                            <Setter Property="Background" Value="Transparent" />
+                            <Setter Property="Width" Value="10" />
+                        </Style>
+
+                        <Style TargetType="Thumb">
+                            <Setter Property="Background" Value="LightGray" />
+                            <Setter Property="BorderBrush" Value="DarkGray" />
+                            <Setter Property="BorderThickness" Value="1" />
+                            <Setter Property="Width" Value="8" />
+                            <Setter Property="Margin" Value="1" />
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Thumb">
+                                        <Border
+                                            Background="{TemplateBinding Background}"
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            BorderThickness="{TemplateBinding BorderThickness}" />
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ScrollViewer.Resources>
+                    <StackPanel>
+                        <Frame x:Name="PageContainer" NavigationUIVisibility="Hidden" />
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <Grid Grid.Row="2" Background="Black">
+
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="30"
+                    Foreground="White"
+                    Text="Choose the track">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                            <Style.Triggers>
+                                <EventTrigger RoutedEvent="Loaded">
+                                    <BeginStoryboard>
+                                        <Storyboard RepeatBehavior="Forever">
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility">
+                                                <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{x:Static Visibility.Visible}" />
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                                                <ColorAnimationUsingKeyFrames.KeyFrames>
+                                                    <DiscreteColorKeyFrame KeyTime="0:0:0" Value="White" />
+                                                    <DiscreteColorKeyFrame KeyTime="0:0:3" Value="#FFDBDBDB" />
+                                                    <DiscreteColorKeyFrame KeyTime="0:0:6" Value="#FFD2D2D2" />
+                                                    <DiscreteColorKeyFrame KeyTime="0:0:9" Value="#FFA7A7A7" />
+                                                </ColorAnimationUsingKeyFrames.KeyFrames>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+
+                <!--  UI elements inside the Grid  -->
+
+                <StackPanel Grid.Row="2" Background="Black">
+                    <StackPanel.Style>
+                        <Style TargetType="StackPanel">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding CurrentSong}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Collapsed" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </StackPanel.Style>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Orientation="Horizontal">
+                            <!--  Анимированные блоки  -->
+
+                            <StackPanel Orientation="Horizontal" x:Name="stackPanel">
+                                <Rectangle
+                                    x:Name="rect1"
+                                    Width="10"
+                                    Margin="5,0"
+                                    Fill="#FF7D7D7D">
+                                    <Rectangle.Style>
+                                        <Style TargetType="Rectangle">
+                                            <Setter Property="Height" Value="40" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsPlaying}" Value="True">
+                                                    <DataTrigger.EnterActions>
+                                                        <BeginStoryboard x:Name="rect1Storyboard">
+                                                            <Storyboard RepeatBehavior="Forever">
+                                                                <DoubleAnimation
+                                                                    AutoReverse="True"
+                                                                    Storyboard.TargetProperty="Height"
+                                                                    From="40"
+                                                                    To="10"
+                                                                    Duration="0:0:0.5" />
+                                                            </Storyboard>
+                                                        </BeginStoryboard>
+                                                    </DataTrigger.EnterActions>
+                                                    <DataTrigger.ExitActions>
+                                                        <StopStoryboard BeginStoryboardName="rect1Storyboard" />
+                                                    </DataTrigger.ExitActions>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Rectangle.Style>
+                                </Rectangle>
+
+                                <Rectangle
+                                    x:Name="rect2"
+                                    Width="10"
+                                    Margin="5,0"
+                                    Fill="#FF757775">
+                                    <Rectangle.Style>
+                                        <Style TargetType="Rectangle">
+                                            <Setter Property="Height" Value="30" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsPlaying}" Value="True">
+                                                    <DataTrigger.EnterActions>
+                                                        <BeginStoryboard x:Name="rect2Storyboard">
+                                                            <Storyboard RepeatBehavior="Forever">
+                                                                <DoubleAnimation
+                                                                    AutoReverse="True"
+                                                                    Storyboard.TargetProperty="Height"
+                                                                    From="30"
+                                                                    To="10"
+                                                                    Duration="0:0:0.6" />
+                                                            </Storyboard>
+                                                        </BeginStoryboard>
+                                                    </DataTrigger.EnterActions>
+                                                    <DataTrigger.ExitActions>
+                                                        <StopStoryboard BeginStoryboardName="rect2Storyboard" />
+                                                    </DataTrigger.ExitActions>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Rectangle.Style>
+                                </Rectangle>
+
+                                <Rectangle
+                                    x:Name="rect3"
+                                    Width="10"
+                                    Margin="5,0"
+                                    Fill="#FF7D7D7D">
+                                    <Rectangle.Style>
+                                        <Style TargetType="Rectangle">
+                                            <Setter Property="Height" Value="20" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsPlaying}" Value="True">
+                                                    <DataTrigger.EnterActions>
+                                                        <BeginStoryboard x:Name="rect3Storyboard">
+                                                            <Storyboard RepeatBehavior="Forever">
+                                                                <DoubleAnimation
+                                                                    AutoReverse="True"
+                                                                    Storyboard.TargetProperty="Height"
+                                                                    From="20"
+                                                                    To="10"
+                                                                    Duration="0:0:0.7" />
+                                                            </Storyboard>
+                                                        </BeginStoryboard>
+                                                    </DataTrigger.EnterActions>
+                                                    <DataTrigger.ExitActions>
+                                                        <StopStoryboard BeginStoryboardName="rect3Storyboard" />
+                                                    </DataTrigger.ExitActions>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Rectangle.Style>
+                                </Rectangle>
+                            </StackPanel>
+
+                            <!--  Фотография, название песни и исполнитель  -->
+                            <StackPanel Margin="20,0,20,0" Orientation="Vertical">
+                                <StackPanel MinWidth="75" Orientation="Horizontal">
+                                    <Image
+                                        Width="75"
+                                        Height="75"
+                                        Source="{Binding CurrentSong.Image}" />
+
+                                    <StackPanel Margin="10,0">
+
+                                        <TextBlock
+        FontSize="20"
+        Foreground="White"
+
+        Name="title"
+
+    MaxWidth="300"
+        Text="{Binding CurrentSong.Title}" />
+
+                                        <TextBlock
+        FontSize="16"
+        Foreground="White"
+        TextWrapping="Wrap"
+        Text="{Binding CurrentSong.User.Name}" />
+                                    </StackPanel>
+
+                                    <StackPanel />
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Button
+                                    Width="25"
+                                    Height="25"
+                                    Command="{Binding LikeCommand}"
+                                    CommandParameter="{Binding CurrentSong}"
+                                    Content=""
+                                    Cursor="Hand">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Grid>
+                                                <Image x:Name="Like" />
+                                            </Grid>
+                                            <ControlTemplate.Triggers>
+                                                <DataTrigger Binding="{Binding CurrentSong.IsLiked}" Value="True">
+                                                    <Setter TargetName="Like" Property="Source" Value="/View/redHeart.png" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding CurrentSong.IsLiked}" Value="False">
+                                                    <Setter TargetName="Like" Property="Source" Value="/View/heart.png" />
+                                                </DataTrigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                            </StackPanel>
+                            <!--  Проигрыватель и кнопки воспроизведения  -->
+                        </StackPanel>
+                        <StackPanel
+                            Grid.Column="1"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Orientation="Horizontal">
+                            <StackPanel Margin="10" VerticalAlignment="Center">
+                                <Grid Width="200" Background="Transparent">
+                                    <StackPanel
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Bottom"
+                                        Orientation="Horizontal">
+                                        <Button
+                                            x:Name="PlayButton1"
+                                            Width="30"
+                                            Height="30"
+                                            Margin="5"
+                                            Background="Transparent"
+                                            BorderThickness="0"
+                                            Click="btnBack_Click"
+                                            Cursor="Hand">
+                                            <Button.Template>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Grid
+                                                        Width="{TemplateBinding Width}"
+                                                        Height="{TemplateBinding Height}"
+                                                        Background="{TemplateBinding Background}">
+                                                        <Image
+                                                            Width="20"
+                                                            Height="20"
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            Source="/View/Group 17.png" />
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Button.Template>
+                                        </Button>
+
+                                        <Button
+                                            x:Name="PlayButton2"
+                                            Width="30"
+                                            Height="30"
+                                            Margin="5"
+                                            Background="Transparent"
+                                            BorderThickness="0"
+                                            Click="btnPlay_Click"
+                                            Cursor="Hand">
+                                            <Button.Template>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Grid
+                                                        Width="{TemplateBinding Width}"
+                                                        Height="{TemplateBinding Height}"
+                                                        Background="{TemplateBinding Background}">
+                                                        <Image
+                                                            Name="change_image"
+                                                            Width="20"
+                                                            Height="20"
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            Source="/View/pause.png" />
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Button.Template>
+                                        </Button>
+                                        <Button
+                                            x:Name="PlayButton3"
+                                            Width="30"
+                                            Height="30"
+                                            Margin="5"
+                                            Background="Transparent"
+                                            BorderThickness="0"
+                                            Click="btnNext_Click"
+                                            Cursor="Hand">
+                                            <Button.Template>
+                                                <ControlTemplate TargetType="Button">
+                                                    <Grid
+                                                        Width="{TemplateBinding Width}"
+                                                        Height="{TemplateBinding Height}"
+                                                        Background="{TemplateBinding Background}">
+                                                        <Image
+                                                            Width="20"
+                                                            Height="20"
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"
+                                                            Source="/View/Group 18.png" />
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Button.Template>
+                                        </Button>
+                                    </StackPanel>
+                                </Grid>
+
+                                <MediaElement
+                                    Name="mePlayer"
+                                    Grid.Row="1"
+                                    LoadedBehavior="Manual"
+                                    Source="{Binding Source, Mode=TwoWay}"
+                                    Stretch="None"
+
+                                    Volume="100" />
+
+                                <StatusBar Grid.Row="2" Background="Transparent">
+                                    <StatusBar.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+                                            </Grid>
+                                        </ItemsPanelTemplate>
+                                    </StatusBar.ItemsPanel>
+                                    <StatusBarItem />
+                                    <StatusBarItem Grid.Column="1" HorizontalContentAlignment="Stretch">
+                                        <Grid>
+                                            <Slider
+                Name="sliProgress"
+                Width="300"
+                Height="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Thumb.DragCompleted="sliProgress_DragCompleted"
+                Thumb.DragStarted="sliProgress_DragStarted"
+                ValueChanged="sliProgress_ValueChanged">
+
+                                                <Slider.Resources>
+                                                    <Style TargetType="Thumb">
+                                                        <Setter Property="Width" Value="20" />
+                                                        <Setter Property="Height" Value="20" />
+                                                        <Setter Property="Background" Value="Green" />
+                                                        <Setter Property="Template">
+                                                            <Setter.Value>
+                                                                <ControlTemplate TargetType="Thumb">
+                                                                    <Ellipse
+                                        Width="20"
+                                        Height="20"
+                                        Fill="{TemplateBinding Background}" />
+                                                                </ControlTemplate>
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </Style>
+                                                </Slider.Resources>
+                                                <Slider.Template>
+                                                    <ControlTemplate TargetType="Slider">
+                                                        <Grid>
+                                                            <Border
+                                x:Name="PART_TrackBackground"
+                                Height="10"
+                                VerticalAlignment="Center"
+                                Background="LightGray"
+                                BorderBrush="Gray"
+                                BorderThickness="1"
+                                CornerRadius="5" />
+                                                            <Track x:Name="PART_Track">
+                                                                <Track.Thumb>
+                                                                    <Thumb x:Name="Thumb" />
+                                                                </Track.Thumb>
+                                                            </Track>
+                                                        </Grid>
+                                                    </ControlTemplate>
+                                                </Slider.Template>
+                                            </Slider>
+
+                                            <!-- Добавляем Rectangle для отображения прогресса музыки -->
+                                            <Border
+                Name="musicProgress"
+                Background="Green"
+                Height="10"
+                Width="0"
+                CornerRadius="5,0,0,5" />
+                                        </Grid>
+                                    </StatusBarItem>
+                                </StatusBar>
+                            </StackPanel>
+                            <TextBlock
+                                Name="lblProgressStatus"
+                                Margin="0,40,0,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Foreground="White">
+                                00:00
+                            </TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
