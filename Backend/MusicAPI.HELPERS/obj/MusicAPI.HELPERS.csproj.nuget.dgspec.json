@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Sites\\Новая папка\\MusicAPI.HELPERS\\MusicAPI.HELPERS.csproj": {}
+    "E:\\Sites\\WPF\\Backend\\MusicAPI.HELPERS\\MusicAPI.HELPERS.csproj": {}
   },
   "projects": {
-    "E:\\Sites\\Новая папка\\MusicAPI.HELPERS\\MusicAPI.HELPERS.csproj": {
+    "E:\\Sites\\WPF\\Backend\\MusicAPI.HELPERS\\MusicAPI.HELPERS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Sites\\Новая папка\\MusicAPI.HELPERS\\MusicAPI.HELPERS.csproj",
+        "projectUniqueName": "E:\\Sites\\WPF\\Backend\\MusicAPI.HELPERS\\MusicAPI.HELPERS.csproj",
         "projectName": "MusicAPI.HELPERS",
-        "projectPath": "E:\\Sites\\Новая папка\\MusicAPI.HELPERS\\MusicAPI.HELPERS.csproj",
+        "projectPath": "E:\\Sites\\WPF\\Backend\\MusicAPI.HELPERS\\MusicAPI.HELPERS.csproj",
         "packagesPath": "C:\\Users\\andry\\.nuget\\packages\\",
-        "outputPath": "E:\\Sites\\Новая папка\\MusicAPI.HELPERS\\obj\\",
+        "outputPath": "E:\\Sites\\WPF\\Backend\\MusicAPI.HELPERS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andry\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,25 +41,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Core": {
-              "target": "Package",
-              "version": "[5.2.9, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[7.0.12, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Abstractions": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[6.15.1, )"
+              "version": "[7.0.3, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.15.1, )"
+              "version": "[7.0.3, )"
             }
           },
           "imports": [
@@ -74,6 +66,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

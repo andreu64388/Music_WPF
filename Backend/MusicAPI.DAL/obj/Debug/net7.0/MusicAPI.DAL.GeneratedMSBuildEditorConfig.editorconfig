@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MusicAPI.DAL
-build_property.ProjectDir = E:\Sites\Новая папка\MusicAPI.DAL\
+build_property.ProjectDir = E:\Sites\WPF\Backend\MusicAPI.DAL\

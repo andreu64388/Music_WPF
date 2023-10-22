@@ -10,3 +10,15 @@ E:\Sites\Новая папка\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPER
 E:\Sites\Новая папка\MusicAPI.HELPERS\obj\Debug\net7.0\refint\MusicAPI.HELPERS.dll
 E:\Sites\Новая папка\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPERS.pdb
 E:\Sites\Новая папка\MusicAPI.HELPERS\obj\Debug\net7.0\ref\MusicAPI.HELPERS.dll
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPERS.csproj.AssemblyReference.cache
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPERS.GeneratedMSBuildEditorConfig.editorconfig
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPERS.AssemblyInfoInputs.cache
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPERS.AssemblyInfo.cs
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPERS.csproj.CoreCompileInputs.cache
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPERS.dll
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\refint\MusicAPI.HELPERS.dll
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\MusicAPI.HELPERS.pdb
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\bin\Debug\net7.0\MusicAPI.HELPERS.deps.json
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\bin\Debug\net7.0\MusicAPI.HELPERS.dll
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\bin\Debug\net7.0\MusicAPI.HELPERS.pdb
+E:\Sites\WPF\Backend\MusicAPI.HELPERS\obj\Debug\net7.0\ref\MusicAPI.HELPERS.dll

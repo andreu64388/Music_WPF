@@ -390,11 +390,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Sites\\Новая папка\\WPF_COURSE\\Music\\Music.csproj",
+      "projectUniqueName": "E:\\Sites\\WPF\\Frontend\\MusicApp\\Music.csproj",
       "projectName": "Music",
-      "projectPath": "E:\\Sites\\Новая папка\\WPF_COURSE\\Music\\Music.csproj",
+      "projectPath": "E:\\Sites\\WPF\\Frontend\\MusicApp\\Music.csproj",
       "packagesPath": "C:\\Users\\andry\\.nuget\\packages\\",
-      "outputPath": "E:\\Sites\\Новая папка\\WPF_COURSE\\Music\\obj\\",
+      "outputPath": "E:\\Sites\\WPF\\Frontend\\MusicApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andry\\AppData\\Roaming\\NuGet\\NuGet.Config",

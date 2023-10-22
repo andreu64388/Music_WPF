@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sTv40afUGRi9noYMypJvYjD2Zv4J1/lOLFWYU7UMq7Jm5Kbrwm/S5k2RR9HYnE9UOPFe+17iVXtjqkOefDlnzA==",
+  "dgSpecHash": "Jggvv2Njo55K9XeJt9bTtMfM8VnoYph6GbuTi2IgQ7YUH4AFakWj1xIWDgJ80SWBX/8aS6n9A6keaJ2vtELRzg==",
   "success": true,
-  "projectFilePath": "E:\\Sites\\Новая папка\\WPF_COURSE\\Music\\Music.csproj",
+  "projectFilePath": "E:\\Sites\\WPF\\Frontend\\MusicApp\\Music.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andry\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\andry\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
